@@ -22,9 +22,9 @@ More details and code examples on the AVR64DD32 can be found at the following li
 
 ## Software Used
 
-- [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.00 or newer
-- [MPLAB® XC8](http://www.microchip.com/mplab/compilers) v2.36 or newer
-- [AVR-Dx Series Device Pack](https://packs.download.microchip.com/) v2.1.152 or newer
+- [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.15 or newer
+- [MPLAB® XC8](http://www.microchip.com/mplab/compilers) v2.41 or newer
+- [AVR-Dx Series Device Pack](https://packs.download.microchip.com/) v2.3.272 or newer
 
 ## Hardware Used
 

@@ -132,7 +132,7 @@ void getCommand(char *command)
     command[index] = '\0';
 }
 
-void executeCommand(char *command)
+void executeCommand(const char *command)
 {
     if(command != NULL)
     {
