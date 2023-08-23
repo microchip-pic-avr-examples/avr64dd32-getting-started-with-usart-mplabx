@@ -29,7 +29,7 @@ More details and code examples on the AVR64DD32 can be found at the following li
 ## Hardware Used
 
 - Logic Analyzer
-- The AVR64DD32 Curiosity Nano Development Board is used as a test platform
+- The AVR64DD32 Curiosity Nano Development board is used as a test platform
   <br><img src="images/AVR64DD32.PNG" width="640">
 
 ## Operation
@@ -58,15 +58,15 @@ The following configurations must be made for this project:
 
  | Pin                     | Configuration                                       |
  | :---------------------: | :-------------------------------------------------: |
- |            PA4          |   RX/TX – digital input (initial configuration)     |
- |            PF5          |   LED - Digital Output							     |
+ |            PA4          |   RX/TX - Digital input (initial configuration)     |
+ |            PF5          |   LED   - Digital output							     |
 
 
 ### 1.2 Demo
 
 When sending a character, the received character works as a cofirmation loopback. If the received character is identical with the sent character, the transmission is successful.
 
-Possible errors are:
+Some possible errors are:
 
 - Interference with another transmitter on the same line
 - Line held down by an external device or by hardware malfunction
@@ -207,7 +207,7 @@ This project shows how to send a string via serial communication using the USART
 
 ## 5. Synchronous Mode
 
-This project shows how to use Synchronous mode for the USART peripheral by connecting two instances and making them communicate with each other. In Synchronous mode, the XCK pin is required. The instance that acts as Host provides the clock on the XCK pin and the Client instance receives the clock on the XCK pin. This program sends the character `H` from one instance and the character `C` from the other, repeatedly.
+This project shows how to use Synchronous mode for the USART peripheral by connecting two instances and making them communicate with each other. In Synchronous mode, the XCK pin is required. The instance that acts as host provides the clock on the XCK pin and the client instance receives the clock on the XCK pin. This program sends the character `H` from one instance and the character `C` from the other, repeatedly.
 
 
 ### 5.1 Setup
@@ -227,11 +227,11 @@ The following configurations must be made for this project:
 
  | Pin                     | Configuration            |
  | :---------------------: | :---------------------:  |
- |            PC0          |   TX1 – Digital output   |
- |            PC1          |   RX1 – Digital input    |
+ |            PC0          |   TX1  – Digital output  |
+ |            PC1          |   RX1  – Digital input   |
  |            PC2          |   XCK1 – Digital output  |
- |            PA4          |   TX0 – Digital output   |
- |            PA5          |   RX0 – Digital input    |
+ |            PA4          |   TX0  – Digital output  |
+ |            PA5          |   RX0  – Digital input   |
  |            PA6          |   XCK0 – Digital input   |
 
 **Note**: Make sure the pairs PC2-PA6, PC0-PA5 and PC1-PA4 are connected via jumper wires, as in the diagram below.
